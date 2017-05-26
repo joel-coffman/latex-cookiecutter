@@ -1,5 +1,5 @@
 .PHONY: default
-default: minted {{cookiecutter.package_name}}.sty
+default: minted {{cookiecutter.package_name}}.sty {{cookiecutter.package_name}}.pdf
 
 .PHONY: minted
 minted:
