@@ -7,4 +7,4 @@ minted:
 {{cookiecutter.package_name}}.sty:
 {{cookiecutter.package_name}}.pdf: {{cookiecutter.package_name}}.sty | minted
 
-include ../Makefile.mk
+include $(shell git rev-parse --show-toplevel)/Makefile.mk
