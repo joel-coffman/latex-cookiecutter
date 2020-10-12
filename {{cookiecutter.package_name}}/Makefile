@@ -1,5 +1,6 @@
 .PHONY: default
-default: {{cookiecutter.package_name}}.sty {{cookiecutter.package_name}}.pdf
+default: $(patsubst %.dtx,%.sty,$(wildcard *.dtx)) \
+         $(patsubst %.dtx,%.pdf,$(wildcard *.dtx))
 
 minted:
 	if ! [ -d $@ ]; then mkdir --parents $@; fi
