@@ -5,7 +5,6 @@ default: $(patsubst %.dtx,%.sty,$(wildcard *.dtx)) \
 minted:
 	if ! [ -d $@ ]; then mkdir --parents $@; fi
 
-{{cookiecutter.package_name}}.sty:
-{{cookiecutter.package_name}}.pdf: {{cookiecutter.package_name}}.sty | minted
+%.pdf: %.sty | minted
 
 include $(shell git rev-parse --show-toplevel)/Makefile.mk
