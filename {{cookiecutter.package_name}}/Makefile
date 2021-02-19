@@ -8,7 +8,7 @@ documentation = $(patsubst %.dtx,%.pdf,$(wildcard *.dtx))
 packages: $(packages)
 
 .PHONY: documentation
-documentation: $(documentation)
+documentation: $(documentation) $(packages)
 
 minted:
 	if ! [ -d $@ ]; then mkdir --parents $@; fi
