@@ -13,6 +13,6 @@ documentation: $(documentation)
 minted:
 	if ! [ -d $@ ]; then mkdir --parents $@; fi
 
-$(documentation): %.sty | minted
+$(documentation): | minted
 
 include $(shell git rev-parse --show-toplevel)/Makefile.mk
