@@ -1,5 +1,5 @@
-.PHONY: default
-default: packages documentation
+.PHONY: all
+all: packages documentation
 
 packages = $(patsubst %.dtx,%.sty,$(wildcard *.dtx))
 documentation = $(patsubst %.dtx,%.pdf,$(wildcard *.dtx))
