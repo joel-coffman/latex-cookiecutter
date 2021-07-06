@@ -33,7 +33,7 @@ jobs:
               .ci/build/make/dependencies/$(lsb_release -cs)/python.list
       - name: make
         run: |
-          directory=$(mktemp --directory)
+          export directory=$(mktemp --directory)
 
           cookiecutter --no-input --output-dir=$(directory) .
           make --directory=$(directory)/package
