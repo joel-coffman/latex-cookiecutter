@@ -10,7 +10,6 @@ Usage
 
 Generate a template for a LaTeX package::
 
-    cookiecutter <path-to-this-repository>
+    cookiecutter git@github.com:joel-coffman/latex-cookiecutter.git
 
-Answer the prompts about the package name, initial release date, and
-maintainer.
+Answer the prompts regarding the package name, description, and maintainer.
