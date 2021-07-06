@@ -1,14 +1,8 @@
-curl
-ghostscript
 git
 make
 python3-pip
 python-is-python3
 texlive
-texlive-bibtex-extra
-texlive-font-utils
-texlive-fonts-extra
-texlive-latex-extra
-texlive-plain-generic
-unzip
+texlive-latex-base
 zip
+unzip
