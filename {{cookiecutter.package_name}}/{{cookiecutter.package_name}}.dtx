@@ -55,7 +55,7 @@
 % Right brace   \}     Tilde         \~}
 %
 %
-% \changes{0.0.1}{{ '{' }}{{cookiecutter.release_date}}}{Initial version}
+% \changes{0.0.1}{{ '{' }}{% now 'utc', '%Y/%m/%d' %}{{ '}' }}{Initial version}
 %
 % \GetFileInfo{{ '{' }}{{cookiecutter.package_name}}.sty}
 %
@@ -98,7 +98,7 @@
 % Identify package and version.
 %    \begin{macrocode}
 \ProvidesPackage{{ '{' }}{{cookiecutter.package_name}}}[%
-    {{cookiecutter.release_date}} %
+    {% now 'utc', '%Y/%m/%d' %} %
     v0.0.1 %
     {{cookiecutter.package_description}}%
 ]

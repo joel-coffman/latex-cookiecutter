@@ -1,7 +1,6 @@
 {
-  "package_name": "Name of LaTeX package",
+  "package_name": "package",
   "package_description": "Short description of package",
-  "release_date": "Date of initial version [YYYY/MM/DD]",
   "author_name": "Name of author (maintainer)",
   "author_email": "Email of author (maintainer)"
 }
