@@ -1,0 +1,7 @@
+git
+make
+python3-pip
+texlive
+texlive-latex-base
+zip
+unzip
