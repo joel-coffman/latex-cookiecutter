@@ -32,4 +32,10 @@ jobs:
           pip3 install --requirement \
               .ci/build/make/dependencies/$(lsb_release -cs)/python.list
       - name: make
-        run: make
+        run: |
+          directory=$(mktemp --directory)
+
+          cookiecutter --no-input --output-dir=$(directory) .
+          make --directory=$(directory)/package
+          make --directory=$(directory)/package dist distcheck
+          rm --recursive $(directory)
