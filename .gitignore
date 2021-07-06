@@ -1,0 +1,77 @@
+# OS metadata
+.DS_Store
+
+# temporary and backup files
+.*.swp
+*~
+
+
+## TeX
+
+# core latex/pdflatex auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+# bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# auxiliary and intermediate files from other packages
+
+# Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# hyperref
+*.brf
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+
+# minted
+_minted-*
+*.pyg
+
+# standalone packages
+*.sta
+
+# TikZ and PGF
+*.dpth
+*.md5
+*.auxlock
+
+# xindy
+*.xdy
