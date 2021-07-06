@@ -33,9 +33,3 @@ jobs:
               .ci/build/make/dependencies/$(lsb_release -cs)/python.list
       - name: make
         run: make
-      - name: Archive artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: packages
-          path: |
-            **/*.zip
